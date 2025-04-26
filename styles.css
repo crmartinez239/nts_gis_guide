@@ -1,0 +1,154 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex; /* Use flexbox for layout */
+}
+
+header {
+    background: #007bff;
+    color: #fff;
+    padding: 10px; /* Reduced padding for a smaller header */
+    text-align: center;
+    width: 100%; /* Ensure header spans the full width */
+    position: fixed; /* Fix the header at the top */
+    top: 0; /* Position it at the top */
+    left: 0; /* Align to the left */
+    z-index: 1000; /* Ensure it stays above other content */
+}
+
+nav {
+    width: 200px; /* Set a fixed width for the vertical nav */
+    background: #fff; /* Background color for the nav */
+    padding: 70px 20px 20px; /* Adjust top padding to avoid overlap with the smaller header */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    position: fixed; /* Fix the nav on the left */
+    top: 50px; /* Position it below the header */
+    left: 0; /* Align to the left */
+    height: calc(100% - 50px); /* Full height minus header height */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin-bottom: 15px; /* Space between vertical items */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    margin-left: 220px; /* Leave space for the vertical nav */
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 50px; /* Space for the fixed header */
+    margin-bottom: 50px;
+}
+
+h2 {
+    color: #007bff;
+    margin-top: 20px;
+}
+
+h3 {
+    margin-top: 15px;
+}
+
+ol {
+    margin-left: 20px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #666;
+    position: fixed; /* Fix the footer at the bottom */
+    bottom: 0; /* Position it at the bottom */
+    left: 0; /* Align to the left */
+    width: 100%; /* Ensure footer spans the full width */
+    background: #fff; /* Background color for the footer */
+    padding: 10px 0; /* Padding for the footer */
+}
+
+a {
+    color: #007bff;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.step-img {
+    cursor: pointer;
+    width: 25%;
+    height: 25%;
+}
+
+.step-img:hover {
+    opacity: 0.8; /* Slightly dim the image on hover */
+    transform: scale(1.05); /* Slightly enlarge the image */
+    transition: transform 0.2s, opacity 0.2s; /* Smooth transition */
+}
+
+.overlay {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 10000; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: rgba(0, 0, 0, 0.8); /* Black background with opacity */
+}
+
+.overlay-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 90%;
+    max-height: 90%;
+    width: auto; /* Allow width to adjust */
+    height: auto; /* Allow height to adjust */
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.navigation-controls {
+    margin: 20px 0; /* Space above and below the section */
+    padding: 10px;
+    background: #f9f9f9; /* Light background for contrast */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    text-align: center; /* Center the text */
+    width: 100%; /* Ensure it spans the full width */
+    clear: both; /* Clear any floated elements above */
+}
