@@ -175,3 +175,8 @@ a:hover {
 #extract-chromeos, #extract-mac {
     display: none;
 }
+
+.video-container {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
