@@ -42,30 +42,60 @@
             <img id="img-1" src="assets/download/download.jpg" alt="download" class="step-img">
         </p>
         <p>
-            Step 2: Once the download is finished. Click on downloads folder button.
+            Step 2: Click on the 3 dots at the top right and then select Downloads.
             <br>
-            <img id="img-2" src="assets/download/click_download_button.jpg" alt="download" class="step-img">
+            <img id="img-2" src="assets/download/downloads.jpg" alt="download" class="step-img">
         </p>
         <p>
-            Step 3: In the Recent downloads history popup, click the open button.
+            Step 3: Click the Show in folder button. This will open your file explorer.
             <br>
-            <img id="img-3" src="assets/download/click_open_button.jpg" alt="download" class="step-img">
+            <img id="img-3" src="assets/download/show.jpg" alt="download" class="step-img">
         </p>
-        <p>
-            Step 4: The file explorer will open up. Now click the extract all button.
-            <br>
-            <img id="img-4" src="assets/download/click_extract_all.jpg" alt="download" class="step-img">
-        </p>
-        <p>
-            Step 5: This will open up another window. Do not change the destination folder. Click the extract button.
-            <br>
-            <img id="img-5" src="assets/download/click_extract.jpg" alt="download" class="step-img">
-        </p>
-        <p>
-            Step 6: After the extraction is finished, another file explorer window will open up. You can close these windows now.
-            <br>
-            <img id="img-6" src="assets/download/close_windows.jpg" alt="download" class="step-img">.
-        </p>
+        <h2>Extracting</h2>
+
+        <div id="extract-select" class="select-os">
+            <label for="select-os"><b>Choose your operating system: </b></label><select id="select-os">
+                <option value="windows">Windows</option>
+                <option value="chromeos">ChromeOS</option>
+                <option value="mac">Mac</option>
+            </select>
+        </div>
+
+        <div id="extract-windows" class="extract-content">
+            <p>
+                Step 4: SINGLE CLICK on the extension folder then press the Extract all button.
+                <br>
+                <img id="img-4" src="assets/extract/windows/extract.jpg" alt="download" class="step-img">
+            </p>
+            <p>
+                Step 5: This will open up another window. Do not change the destination folder. Click the Extract button.
+                <br>
+                <img id="img-5" src="assets/download/click_extract.jpg" alt="download" class="step-img">
+            </p>
+            <p>
+                Step 6: After the extraction is finished, another file explorer window will open up. You can close these windows now.
+                <br>
+                <img id="img-6" src="assets/extract/windows/close_windows.jpg" alt="download" class="step-img">.
+            </p>
+        </div>
+
+        <div id="extract-chromeos" class="extract-content">
+            <p>
+                Step 4: Right-click on the extension folder then select Extract all.
+                <br>
+                <img id="img-7" src="assets/extract/chromeos/extract.jpg" alt="download" class="step-img">
+            </p>
+            <p>
+                Step 5: After the extraction is finished, another file explorer window will open up. You can close these windows now.
+                <br>
+                <img id="img-9" src="assets/extract/chromeos/close.jpg" alt="download" class="step-img">.
+            </p>
+        </div>
+
+        <div id="extract-mac" class="extract-content">
+            <h4>If you're savvy enough to own a Mac then you probably know how to unzip a file.</h4>
+        </div>
+
     </section>
 
     <section class="navigation-controls">
@@ -76,11 +106,10 @@
 
 </main>
 
-
-
 <footer>
     <p>&copy; 2025 Christopher Martinez. All rights reserved.</p>
 </footer>
+<script src="os.js"></script>
 <script src="main.js"></script>
 </body>
 </html>
